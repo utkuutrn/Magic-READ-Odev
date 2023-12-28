@@ -1,0 +1,43 @@
+
+Selenium IDE, web tarayıcılarındaki otomasyon testlerini oluşturmak için kullanılan bir araçtır ve kullanıcılara test senaryolarını kaydetme ve oynatma olanağı sağlar. Selenium IDE'de kullanılan temel komutlar şunlardır:
+
+1. `open`: Belirli bir URL'yi tarayıcıda açar.
+   - Örnek: `open | https://www.example.com`
+
+2. `click`: Bir web sayfasındaki bir elementi tıklar.
+   - Örnek: `click | id=buttonId`
+
+3. `type`: Bir metin kutusuna metin girer.
+   - Örnek: `type | id=username | myusername`
+
+4. `sendKeys`: Bir metin kutusuna tuş vuruşları gönderir.
+   - Örnek: `sendKeys | id=searchBox | selenium`
+
+5. `waitForElementPresent`: Belirli bir elementin sayfada görünmesini bekler.
+   - Örnek: `waitForElementPresent | id=elementId`
+
+6. `verifyText`: Sayfa üzerinde belirli bir metin parçasının bulunduğunu doğrular.
+   - Örnek: `verifyText | xpath=//h1 | Welcome to Selenium IDE`
+
+7. `store`: Bir değeri bir değişkene kaydeder.
+   - Örnek: `store | mytext | This is a test message`
+
+8. `echo`: Bir mesajı konsola yazdırır.
+   - Örnek: `echo | This is a log message`
+
+9. `goBack`: Tarayıcıda bir sayfa geri gitmeyi simgeler.
+   - Örnek: `goBack | `
+
+10. `select`: Bir dropdown menüden bir seçenek seçer.
+    - Örnek: `select | id=dropdownId | Option 2`
+
+11. `assertTitle`: Sayfanın başlığını doğrular.
+    - Örnek: `assertTitle | My Page Title`
+
+12. `clickAndWait`: Bir elementi tıklar ve sonraki sayfanın yüklenmesini bekler.
+    - Örnek: `clickAndWait | id=linkId`
+
+13. `mouseOver`: Bir elementin üzerine fareyi getirir.
+    - Örnek: `mouseOver | id=elementId`
+
+Bu komutlar, Selenium IDE kullanarak basit otomasyon senaryoları oluşturmanıza yardımcı olur. Her komut, bir eylemi gerçekleştirmek için kullanılır ve belirli bir hedef elementi veya değeri hedeflemek için farklı seçeneklerle birlikte kullanılabilir. Selenium IDE, bu komutları sürükleyip bırakarak kolayca oluşturmanıza olanak tanır ve otomasyon testlerinizi görsel bir şekilde kaydedebilmenizi sağlar.
